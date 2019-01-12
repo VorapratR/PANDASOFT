@@ -22,13 +22,16 @@ export class ListNewsPage {
     
   constructor(public http: Http, public navCtrl: NavController) {
   }
-  switchSingleNewsPage(){
-    this.navCtrl.push(SingleNewsPage)
+  switchSingleNewsPage(item){
+    console.log(item);
+    this.navCtrl.push(SingleNewsPage,{
+      item:item
+    });
   }
   ionViewDidLoad(){
-        this.loadUser();
+        this.loadNews();
   }
-  loadUser() {
+  loadNews() {
         this.http.get('https://5c065a3fc16e1200139479cc.mockapi.io/api/v1/news')
             .map(res => res.json())
             .subscribe (data => {

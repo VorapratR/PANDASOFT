@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams} from 'ionic-angular';
 
 /**
  * Generated class for the SingleNewsPage page.
@@ -14,12 +14,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'single-news.html',
 })
 export class SingleNewsPage {
-
+  item:object;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+      this.item =navParams.get('item')
+      
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SingleNewsPage');
+    console.log(this.item);
+    
   }
 
 }
