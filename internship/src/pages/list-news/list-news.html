@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      <ion-title item-left>
+        PANDASOFT
+      </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content > 
+    <ion-row> 
+      <ion-col>
+        <div *ngFor="let item of data"> 
+          <ion-card (click)="switchSingleNewsPage()"> 
+            <ion-item>
+                <dir item-start>
+                    <img src="{{item.image}}"> 
+                </dir> 
+                <h2 text-center> {{item.title}} </h2>
+            </ion-item>
+            
+          </ion-card> 
+        </div>
+      </ion-col>
+     </ion-row>
+  </ion-content> 
