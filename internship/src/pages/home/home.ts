@@ -15,11 +15,14 @@ export class HomePage {
   }
   switchListNewsPage(){
     this.login();
-    this.navCtrl.push(ListNewsPage)
   }
   login(){
-    
-
+    if(this.username == "usertest" && this.password == "1234"){
+      this.navCtrl.push(ListNewsPage);
+    }
+    else {
+      alert("Can't Login");
+    }
   }
   
 
