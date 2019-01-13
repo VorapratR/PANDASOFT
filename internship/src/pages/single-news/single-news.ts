@@ -20,10 +20,5 @@ export class SingleNewsPage {
       
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SingleNewsPage');
-    console.log(this.item);
-    
-  }
 
 }

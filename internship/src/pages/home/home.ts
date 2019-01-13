@@ -7,12 +7,19 @@ import { ListNewsPage } from '../list-news/list-news';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  username:any;
+  password:any;
 
   constructor(public navCtrl: NavController) {
 
   }
   switchListNewsPage(){
+    this.login();
     this.navCtrl.push(ListNewsPage)
+  }
+  login(){
+    
+
   }
   
 

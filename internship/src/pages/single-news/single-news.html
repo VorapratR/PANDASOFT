@@ -6,15 +6,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding >
-  <ion-row> 
-    <ion-col>
-      <div>  
-          <img width="100%" height="100%" src="{{item.image}}"> 
-          <h1> {{item.title}} </h1>
-          <p>{{item.detail}}</p>
-          <h5 text-right> {{item.create}}</h5>
-      </div>
-    </ion-col>
-   </ion-row>
+<ion-content > 
+  <img class="img"  src="{{item.image}}"> 
+
+  <div padding-horizontal text-wrap class="myCard">
+      <h6 text-center> {{item.title}} </h6>
+      
+      <h6 text-wrap>{{item.detail}} </h6>
+      
+      <h6 text-right> {{item.create}}     </h6>
+  </div>
+
 </ion-content>

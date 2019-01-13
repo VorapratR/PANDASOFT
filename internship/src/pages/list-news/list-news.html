@@ -6,20 +6,21 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content > 
-    <ion-row> 
+<ion-content padding > 
+
+  <ion-row> 
       <ion-col>
         <div *ngFor="let item of data"> 
-          <ion-card  style="border-top: 3px solid colorofyourchosing" (click)="switchSingleNewsPage(item)"> 
-            <ion-item>
+          <ion-card  class="myCard" (click)="switchSingleNewsPage(item)"> 
+            <ion-item >
                 <dir item-start>
-                    <img src="{{item.image}}"> 
+                    <img class="img"src="{{item.image}}"> 
                 </dir> 
                 <h2 text-center> {{item.title}} </h2>
             </ion-item> 
           </ion-card> 
         </div>
       </ion-col>
-     </ion-row>
+  </ion-row>    
      
 </ion-content> 
