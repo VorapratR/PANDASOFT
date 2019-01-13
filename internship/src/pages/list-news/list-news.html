@@ -10,7 +10,7 @@
     <ion-row> 
       <ion-col>
         <div *ngFor="let item of data"> 
-          <ion-card (click)="switchSingleNewsPage(item)"> 
+          <ion-card  style="border-top: 3px solid colorofyourchosing" (click)="switchSingleNewsPage(item)"> 
             <ion-item>
                 <dir item-start>
                     <img src="{{item.image}}"> 
@@ -21,4 +21,5 @@
         </div>
       </ion-col>
      </ion-row>
+     
 </ion-content> 

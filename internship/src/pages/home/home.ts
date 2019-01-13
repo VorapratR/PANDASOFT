@@ -14,5 +14,6 @@ export class HomePage {
   switchListNewsPage(){
     this.navCtrl.push(ListNewsPage)
   }
+  
 
 }

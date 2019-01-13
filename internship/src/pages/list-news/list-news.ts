@@ -29,9 +29,9 @@ export class ListNewsPage {
     });
   }
   ionViewDidLoad(){
-        this.loadNews();
+        this.getNews();
   }
-  loadNews() {
+  getNews() {
         this.http.get('https://5c065a3fc16e1200139479cc.mockapi.io/api/v1/news')
             .map(res => res.json())
             .subscribe (data => {
